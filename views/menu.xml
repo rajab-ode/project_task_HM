@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+    
+        <!-- This Menu Item Must have a parent -->
+        <menuitem 
+            id="booking_main_menu_categ" 
+            name="Booking" 
+            parent="sale.sale_menu_root" 
+            sequence="0"/>
+        
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem 
+            id="booking_order_menu" 
+            name="Booking Order" 
+            parent="booking_main_menu_categ"
+            action="booking_order_action"
+            sequence="0"/>
+        <menuitem 
+            id="work_order_menu" 
+            name="Work Order" 
+            parent="booking_main_menu_categ" 
+            action="work_order_action"
+            sequence="1"/>
+        <menuitem 
+            id="service_team_menu" 
+            name="Service Team" 
+            parent="booking_main_menu_categ"
+            action="service_team_action"
+            sequence="2"/>
+    </data>
+    
+</odoo>
